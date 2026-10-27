@@ -103,25 +103,16 @@
         </div>
     </header>
 
-    <!-- Main Container Layout (3 Columnas en escritorio: Anuncio Izq | App | Anuncio Der) -->
+    <!-- Main Container Layout -->
     <div class="max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6 py-6 flex-grow w-full">
         <div class="flex flex-col lg:flex-row gap-6 justify-center">
 
-            <!-- ==========================================
-                 ESPACIO PUBLICIDAD IZQUIERDA (SKYSCRAPER)
-                 ========================================== -->
+            <!-- ESPACIO PUBLICIDAD IZQUIERDA (SKYSCRAPER) -->
             <aside class="hidden xl:block w-64 flex-shrink-0">
                 <div class="sticky top-20 bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-sm min-h-[600px] flex flex-col items-center justify-center bg-slate-50/50">
                     <span class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Publicidad</span>
                     
                     <!-- ADSENSE CODE START: Banner Izquierdo -->
-                    <!-- 
-                    <ins class="adsbygoogle"
-                         style="display:block; width:160px; height:600px;"
-                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                         data-ad-slot="1234567890"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                    -->
                     <div class="w-full h-[600px] border-2 border-dashed border-slate-300 rounded-xl flex flex-col items-center justify-center p-4 text-slate-400 bg-white">
                         <i class="fa-solid fa-rectangle-ad text-4xl mb-2 text-slate-300"></i>
                         <p class="text-xs font-medium text-center">Espacio de Anuncio (Skyscraper)</p>
@@ -131,9 +122,7 @@
                 </div>
             </aside>
 
-            <!-- ==========================================
-                 CONTENIDO PRINCIPAL (CALCULADORA)
-                 ========================================== -->
+            <!-- CONTENIDO PRINCIPAL (CALCULADORA) -->
             <main class="flex-1 max-w-5xl">
                 
                 <!-- BANNER PUBLICITARIO SUPERIOR (RESPONSIVE) -->
@@ -149,7 +138,7 @@
                 <!-- Tarjeta Principal de Entrada y Resultados -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-white border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-sm mb-6">
                     
-                    <!-- FORMULARIO DE ENTRADA (Columna Izquierda 7 col) -->
+                    <!-- FORMULARIO DE ENTRADA -->
                     <div class="lg:col-span-7 space-y-6">
                         <div class="border-b border-slate-100 pb-4">
                             <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
@@ -165,7 +154,6 @@
                                 <label class="text-sm font-semibold text-slate-700">Precio de la Vivienda</label>
                                 <div class="relative rounded-lg shadow-sm">
                                     <input type="number" id="homePriceInput" value="250000" step="1000" min="10000" max="2000000" class="w-36 text-right font-bold text-brand-700 bg-slate-50 border border-slate-300 rounded-lg px-3 py-1 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
-                                    <span class="absolute right-8 top-1 text-slate-400 text-sm hidden">€</span>
                                 </div>
                             </div>
                             <input type="range" id="homePriceSlider" min="30000" max="1000000" step="5000" value="250000">
@@ -193,7 +181,7 @@
                             </div>
                         </div>
 
-                        <!-- Importe Financiado (Calculado) -->
+                        <!-- Importe Financiado -->
                         <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-3 flex justify-between items-center">
                             <span class="text-xs font-semibold text-slate-600 uppercase tracking-wide">Importe a Financiar:</span>
                             <span id="loanAmountDisplay" class="text-base font-extrabold text-slate-900">200.000 €</span>
@@ -249,10 +237,9 @@
 
                     </div>
 
-                    <!-- TARJETA DE RESULTADOS (Columna Derecha 5 col) -->
+                    <!-- TARJETA DE RESULTADOS -->
                     <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 via-brand-900 to-slate-900 rounded-2xl p-6 text-white flex flex-col justify-between shadow-xl relative overflow-hidden">
                         
-                        <!-- Elementos decorativos de fondo -->
                         <div class="absolute -right-10 -top-10 w-40 h-40 bg-brand-500/10 rounded-full blur-2xl"></div>
                         <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-400/10 rounded-full blur-2xl"></div>
 
@@ -304,7 +291,6 @@
                             </div>
                         </div>
 
-                        <!-- Botón o Nota al pie -->
                         <div class="relative z-10 pt-6 mt-4 border-t border-slate-700/60">
                             <a href="#tablaAmortizacion" class="w-full bg-white/10 hover:bg-white/20 text-white font-medium text-xs py-2.5 rounded-xl transition flex items-center justify-center gap-2 text-center backdrop-blur-sm">
                                 <i class="fa-solid fa-table-list"></i>
@@ -378,18 +364,33 @@
                     </div>
                 </div>
 
-                <!-- TEXTO INFORMATIVO (SEO + ENGAGEMENT) -->
-                <article class="mt-8 bg-white border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-sm space-y-4 text-slate-600 text-sm leading-relaxed">
-                    <h3 class="text-base font-bold text-slate-900">¿Cómo funciona la calculadora de hipoteca?</h3>
-                    <p>Esta herramienta utiliza el <strong>sistema de amortización francés</strong>, el cual es el método estándar utilizado por la inmensa mayoría de entidades bancarias en España y Latinoamérica. En este sistema, las cuotas mensuales son fijas durante el periodo en que no cambie el tipo de interés.</p>
-                    <p>Al principio del préstamo, la mayor parte de la cuota mensual se destina a pagar <strong>intereses</strong>, mientras que una parte más pequeña amortiza el capital prestado. Conforme pasan los años, esta proporción se invierte.</p>
+                <!-- TEXTO INFORMATIVO (SEO + REQUISITOS AD SENSE) -->
+                <article class="mt-8 bg-white border border-slate-200 rounded-3xl p-6 lg:p-8 shadow-sm space-y-6 text-slate-600 text-sm leading-relaxed">
+                    <h2 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-3">Guía completa: ¿Cómo calcular tu cuota de hipoteca?</h2>
+                    
+                    <p>Nuestra calculadora de hipotecas utiliza el <strong>sistema de amortización francés</strong>, el método de cálculo más extendido por las entidades financieras en España y la Unión Europea. Este sistema permite mantener una cuota periódica constante durante los periodos en los que el tipo de interés no sufre variaciones.</p>
+
+                    <h3 class="text-base font-bold text-slate-800">¿Cómo funciona el sistema de amortización francés?</h3>
+                    <p>En las fases iniciales del préstamo hipotecario, la cuota abonada se destina principalmente a saldar los <strong>intereses</strong> generados por el capital prestado. Conforme pasan los años y se reduce la deuda pendiente, la proporción se invierte: disminuye el importe destinado a intereses y aumenta la cantidad asignada a la amortización directa del principal.</p>
+
+                    <h3 class="text-base font-bold text-slate-800">Conceptos clave al solicitar una hipoteca</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>TIN (Tipo de Interés Nominal):</strong> Es el porcentaje fijo o variable que el banco cobra de forma directa por prestar el dinero, sin computar gastos ni comisiones adicionales.</li>
+                        <li><strong>TAE (Tasa Anual Equivalente):</strong> Refleja el coste financiero real de la operación. Incluye el TIN más las comisiones bancarias, gastos de apertura y primas de productos vinculados obligatorios (seguros de vida o de hogar).</li>
+                        <li><strong>Gastos de Compraventa y Constitución:</strong> Además de la entrada inicial (habitualmente el 20%), se recomienda disponer de entre un 10% y un 12% adicional para asumir impuestos (ITP o IVA), costes notariales, registro de la propiedad y gestoría.</li>
+                    </ul>
+
+                    <h3 class="text-base font-bold text-slate-800">Estrategias para amortizar capital de forma anticipada</h3>
+                    <p>Si dispones de ahorros extra durante la vida de tu préstamo, puedes realizar amortizaciones parciales anticipadas. Existen dos modalidades principales:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li><strong>Reducir cuota mensual:</strong> Disminuye la cantidad a pagar mes a mes manteniendo la fecha original de finalización.</li>
+                        <li><strong>Reducir plazo total:</strong> Mantiene la misma cuota pero acorta la duración del préstamo, lo que genera un ahorro de intereses global más elevado a largo plazo.</li>
+                    </ol>
                 </article>
 
             </main>
 
-            <!-- ==========================================
-                 ESPACIO PUBLICIDAD DERECHA (SKYSCRAPER)
-                 ========================================== -->
+            <!-- ESPACIO PUBLICIDAD DERECHA (SKYSCRAPER) -->
             <aside class="hidden xl:block w-64 flex-shrink-0">
                 <div class="sticky top-20 bg-white border border-slate-200 rounded-2xl p-4 text-center shadow-sm min-h-[600px] flex flex-col items-center justify-center bg-slate-50/50">
                     <span class="text-xs uppercase tracking-wider font-semibold text-slate-400 mb-2">Publicidad</span>
@@ -407,12 +408,37 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer con Enlaces Legales -->
     <footer class="bg-white border-t border-slate-200 mt-12 py-6 text-center text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4">
-            <p>© <span id="yearSpan"></span> HipoCalc Pro. Todos los derechos reservados. Las cifras son estimaciones informativas.</p>
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© <span id="yearSpan"></span> HipoCalc Pro. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <button onclick="openModal('legal')" class="hover:text-slate-900 underline">Aviso Legal</button>
+                <button onclick="openModal('privacy')" class="hover:text-slate-900 underline">Política de Privacidad</button>
+                <button onclick="openModal('cookies')" class="hover:text-slate-900 underline">Política de Cookies</button>
+            </div>
         </div>
     </footer>
+
+    <!-- Banner de Cookies Persistente (Cumplimiento GDPR/UE) -->
+    <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 shadow-2xl z-50 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-slate-700">
+        <p class="text-xs sm:text-sm text-slate-300 text-center sm:text-left">
+            Utilizamos cookies propias y de terceros para analizar el tráfico y personalizar los anuncios. Consulta nuestra 
+            <button onclick="openModal('cookies')" class="underline text-brand-400 hover:text-brand-300">política de cookies</button>.
+        </p>
+        <div class="flex gap-2">
+            <button onclick="acceptCookies()" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white font-medium text-xs rounded-xl transition">Aceptar todas</button>
+        </div>
+    </div>
+
+    <!-- Modales para Textos Legales -->
+    <div id="legalModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto p-6 relative shadow-2xl border border-slate-200">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 font-bold p-1">✕</button>
+            <h3 id="modalTitle" class="text-lg font-bold mb-4 text-slate-900"></h3>
+            <div id="modalBody" class="text-xs sm:text-sm text-slate-600 space-y-3 leading-relaxed"></div>
+        </div>
+    </div>
 
     <!-- LÓGICA EN JAVASCRIPT -->
     <script>
@@ -499,14 +525,12 @@
             let annualRate = parseFloat(interestRateInput.value) || 0;
             let years = parseInt(loanTermInput.value) || 1;
 
-            // Ajustar entrada si excede el precio de la casa
             if (downPayment >= price) {
                 downPayment = price * 0.9;
                 downPaymentInput.value = downPayment;
                 downPaymentSlider.value = downPayment;
             }
 
-            // Actualizar máximos y porcentajes
             downPaymentSlider.max = price;
             maxDownPaymentText.textContent = formatEUR(price);
             
@@ -516,8 +540,6 @@
             const loanAmount = Math.max(0, price - downPayment);
             loanAmountDisplay.textContent = formatEUR(loanAmount);
 
-            // Fórmula de Amortización Francesa
-            // M = P * [ i(1 + i)^n ] / [ (1 + i)^n – 1 ]
             const monthlyRate = (annualRate / 100) / 12;
             const totalMonths = years * 12;
 
@@ -531,19 +553,16 @@
             const totalPaid = monthlyPayment * totalMonths;
             const totalInterest = totalPaid - loanAmount;
 
-            // Actualizar interfaz de resultados
             monthlyPaymentDisplay.textContent = formatEURDecimal(monthlyPayment);
             summaryPrincipal.textContent = formatEUR(loanAmount);
             summaryInterest.textContent = formatEUR(totalInterest);
             summaryTotalPaid.textContent = formatEUR(totalPaid);
 
-            // Actualizar barra de proporción
             const interestPercentage = totalPaid > 0 ? (totalInterest / totalPaid) * 100 : 0;
             const principalPercentage = 100 - interestPercentage;
             barPrincipal.style.width = `${principalPercentage}%`;
             barInterest.style.width = `${interestPercentage}%`;
 
-            // Generar Amortización y Actualizar Componentes
             const schedule = generateAmortizationSchedule(loanAmount, monthlyRate, totalMonths, monthlyPayment);
             updateTable(schedule);
             updateChart(schedule, years);
@@ -580,7 +599,6 @@
             amortizationTbody.innerHTML = '';
 
             if (isMonthlyView) {
-                // Renderizar todos los meses
                 schedule.forEach(row => {
                     const tr = document.createElement('tr');
                     tr.className = "hover:bg-slate-50 transition";
@@ -594,7 +612,6 @@
                     amortizationTbody.appendChild(tr);
                 });
             } else {
-                // Agrupar por Años
                 const yearlyData = {};
                 schedule.forEach(row => {
                     const y = row.year;
@@ -632,7 +649,6 @@
         function updateChart(schedule, totalYears) {
             const ctx = document.getElementById('mortgageChart').getContext('2d');
 
-            // Filtrar datos por fin de año para el gráfico
             const labels = [];
             const balanceData = [];
             const interestData = [];
@@ -697,9 +713,7 @@
                         }
                     },
                     scales: {
-                        x: {
-                            grid: { display: false }
-                        },
+                        x: { grid: { display: false } },
                         y: {
                             ticks: {
                                 callback: function(value) {
@@ -712,7 +726,40 @@
             });
         }
 
-        // Inicializar al cargar la página
+        // Gestión de Cookies y Modales Legales
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+
+        function openModal(type) {
+            const modal = document.getElementById('legalModal');
+            const title = document.getElementById('modalTitle');
+            const body = document.getElementById('modalBody');
+
+            if (type === 'legal') {
+                title.textContent = 'Aviso Legal';
+                body.innerHTML = '<p>Este sitio web proporciona una herramienta de cálculo informativo basada en el sistema de amortización francés. Las cifras resultantes son estimaciones y no constituyen una oferta formal de crédito bancario ni asesoramiento financiero vinculante.</p>';
+            } else if (type === 'privacy') {
+                title.textContent = 'Política de Privacidad';
+                body.innerHTML = '<p>No recopilamos ni almacenamos ningún tipo de dato personal. Toda la información introducida en la calculadora se procesa de forma local e instantánea dentro de tu propio navegador.</p>';
+            } else if (type === 'cookies') {
+                title.textContent = 'Política de Cookies';
+                body.innerHTML = '<p>Utilizamos cookies estrictamente necesarias para recordar tus preferencias de aceptación. Además, proveedores externos como Google AdSense pueden utilizar cookies para mostrar anuncios personalizados en función de tus hábitos de navegación.</p>';
+            }
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('legalModal').classList.add('hidden');
+        }
+
+        // Inicialización
         window.onload = function() {
             updateCalculations();
         };
